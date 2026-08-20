@@ -4,7 +4,6 @@
 # 学术页面模板
 **Academic Pages 是一个基于 GitHub Pages 的学术网站模板。**
 
-![学术页面模板示例](screenshot.jpg "学术页面模板示例")
 
 # 快速开始
 
