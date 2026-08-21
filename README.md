@@ -77,8 +77,6 @@ docker run -p 4000:4000 --rm -v $(pwd):/usr/src/app jekyll-site
 # Academic Pages
 **Academic Pages is a Github Pages template for academic websites.**
 
-![Academic Pages template example](screenshot.jpg "Academic Pages template example")
-
 # Getting Started
 
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
