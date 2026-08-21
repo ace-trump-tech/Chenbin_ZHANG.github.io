@@ -101,8 +101,11 @@ for row, item in publications.iterrows():
     md += "\nRecommended citation: " + item.citation
     
     md_filename = os.path.basename(md_filename)
-       
-    with open("../_publications/" + md_filename, 'w') as f:
+    output_dir = os.path.realpath("../_publications")
+    output_path = os.path.realpath(os.path.join(output_dir, md_filename))
+    if not output_path.startswith(output_dir + os.sep):
+        raise ValueError("Path traversal detected in filename: " + md_filename)
+    with open(output_path, 'w') as f:
         f.write(md)
 
 
